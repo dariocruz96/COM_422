@@ -1,3 +1,6 @@
+import pytest
+
+
 class Car:
     def __init__(self, currentSpeed, maxSpeed, fuelLevel):
         self.currentSpeed = currentSpeed
@@ -21,11 +24,11 @@ class Car:
             self.currentSpeed = 0
 
     def refuel(self, value):
-        if 100 >= self.fuelLevel+value >= 0:
+        if 100 >= self.fuelLevel + value >= 0:
             self.fuelLevel = self.fuelLevel + value
-        elif self.fuelLevel+value > 100:
+        elif self.fuelLevel + value > 100:
             self.fuelLevel = 100
-        elif self.fuelLevel+value < 0:
+        elif self.fuelLevel + value < 0:
             self.fuelLevel = 0
 
     def __str__(self):
