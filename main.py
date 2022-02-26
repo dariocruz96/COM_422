@@ -1,4 +1,4 @@
-from car import Car
+from Car import Car
 
 car_one = Car(120, 150, 0)
 car_two = Car(80, 120, 0)

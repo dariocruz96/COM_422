@@ -1,6 +1,3 @@
-import pytest
-
-
 class Car:
     def __init__(self, currentSpeed, maxSpeed, fuelLevel):
         self.currentSpeed = currentSpeed
